@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./assets/bg.jpg');
+    background-repeat: no-repeat;
+}
+
+.login-container {
+    padding: 25px 45px;
+    border-radius: 12px;
+    text-align: center;
+    backdrop-filter: blur(20px); 
+    border: 1px solid #4000ff;
+    box-shadow: 0px 0px 2px #4e13ff;
+    color: white;
+    width: 45%;
+}
+
+.login-container:hover,
+.contentbox:hover{
+    transition: ease-in-out 0.3s;
+    box-shadow: 5px 5px 45px #3423f7;
+    backdrop-filter: blur(100px);
+}
+
+.contentbox{
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    backdrop-filter: blur(20px); 
+    border: 1px solid #4000ff;
+    box-shadow: 0px 0px 2px #4e13ff;
+    color: white;
+}
+
+@media screen and (max-width:998px) {
+    .contentbox{
+        display: none;
+    }
+
+    .login-container{
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        padding: 25px 35px;
+    }
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+
+input:focus{
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #4309e1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.signup-link {
+    margin-top: 10px;
+    color: white;
+}
+.signup-link a {
+    text-decoration: none;
+    color: #f83e3e;
+}
+
+.forgot-link{
+    color: white;
+    margin-top: -5px;
+    text-align: end;
+    font-size: 14px;
+}
+
+.oauth-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.google,
+.github {
+    background: #4309e1;
+    color: white;
+}
+ 
+.hr-line {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.hr-line::before,
+.hr-line::after {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid #581bff;
+    margin: 5px;
+}
+
+.hr-line span {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+/* ======================== signup page ========================= */
+

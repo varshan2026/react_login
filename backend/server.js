@@ -12,8 +12,11 @@ server.use(express.urlencoded({ extended: true }));
 
 server.listen(3000);
 
-server.post('/login', (req, res) => {
+server.post("/", (req, res) => {
+    res.send("Server running....")
+});
 
+server.post('/login', (req, res) => {
 
     if(req.body.username === username && req.body.password === password){
         res.send(true);

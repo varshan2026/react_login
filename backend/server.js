@@ -12,7 +12,7 @@ server.use(express.urlencoded({ extended: true }));
 
 server.listen(3000);
 
-server.post("/", (req, res) => {
+server.get("/", (req, res) => {
     res.send("Server running....")
 });
 

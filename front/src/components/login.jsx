@@ -18,7 +18,7 @@ function Login(){
     }
 
     const submitdata = () => {
-        const logindetail = axios.post(`http://127.0.0.1:3000/login`, {"username":user, "password":pass});
+        const logindetail = axios.post(`https://react-login-backend.vercel.app/login`, {"username":user, "password":pass});
 
         logindetail.then((data) => {
             console.log(data.data)
